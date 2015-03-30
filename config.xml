@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.alu.nfc_write"
+        versionCode = "1" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>尚青 NFC 寫入</name>
+
+    <description>
+        尚青雲端整合行銷 為您達到最佳的行銷效果!
+    </description>
+
+    <author href="https://build.phonegap.com" email="shady.tw@gmail.com">
+        Tsai Toan-En
+    </author>
+	
+	<icon src="icon.png" />
+	
+	<gap:platform name="android" />	
+	<gap:platform name="ios" />
+	
+	<gap:plugin name="org.apache.cordova.media" />
+	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
+	<gap:plugin name="fi.avaus.cordova.geolocation" version="0.3.11" />
+	<gap:plugin name="com.chariotsolutions.nfc.plugin" version="0.5.1" />	
+	
+	<feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="debug-server" required="true">
+       <param name="domain" value="http://debug.phonegap.com"/>
+       <param name="key" value="willoughby"/>
+    </feature>
+    <preference name="phonegap-version" value="3.7.0" />
+    <preference name="target-device" value="universal" />
+	<preference name="orientation" value="default" />
+	<preference name="fullscreen" value="true" />	
+	<preference name="webviewbounce" value="true" />
+	<access origin="*" />		
+</widget>
